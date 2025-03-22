@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - Rolie DANGUI PAMA</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="cursor"></div>
+
+    <header>
+      <div class="container">
+        <nav>
+          <a href="#" class="logo">Port<span>folio</span></a>
+          <ul class="nav-links">
+            <li><a href="#hero">Accueil</a></li>
+            <li><a href="#about">À propos</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#projects">Projets</a></li>
+            <li><a href="#testimonials">Témoignages</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <button class="menu-btn">
+            <i class="fas fa-bars"></i>
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <section id="hero" class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h1 class="reveal-text">
+            Rolie DANGUI PAMA <br />
+            Développeur web & mobile
+          </h1>
+          <p class="hero-subtitle reveal-text">
+            Je transforme vos idées en expériences numériques mémorables.
+          </p>
+          <div class="hero-cta">
+            <a href="#projects" class="btn btn-primary">Voir mes projets</a>
+            <a href="#contact" class="btn btn-secondary">Me contacter</a>
+          </div>
+          <div class="social-links">
+            <a
+              href="https://github.com/RoroPama"
+              class="social-link"
+              target="_blank"
+              ><i class="fab fa-github"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/rolie-dangui-pama-1551992b5/"
+              target="_blank"
+              class="social-link"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <a href="#about" class="scroll-down">
+        Découvrir
+        <i class="fas fa-chevron-down"></i>
+      </a>
+    </section>
+
+    <section id="about" class="about">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-img reveal-left">
+            <img src="asset/me.jpg" alt="Portrait de Moi" />
+          </div>
+          <div class="about-content reveal-right">
+            <h2>À propos de moi - Rolie DANGUI PAMA</h2>
+            <p>
+              Développeur web passionné avec plus de 3 ans d'expérience dans la
+              création d'applications web et mobile performantes. J'aime
+              résoudre des problèmes complexes et transformer des idées
+              innovantes en solutions digitales.
+            </p>
+            <p>
+              Mon approche combinant créativité et méthodologie technique me
+              permet de concevoir des expériences numériques qui se démarquent
+              et atteignent leurs objectifs.
+            </p>
+            <div class="skills">
+              <span class="skill">HTML5</span>
+              <span class="skill">CSS3</span>
+              <span class="skill">JavaScript</span>
+              <span class="skill">React</span>
+              <span class="skill">NodeJs</span>
+              <span class="skill">ExpressJs</span>
+              <span class="skill">Flutter</span>
+              <span class="skill">Firebase</span>
+            </div>
+            <!-- <div class="experience">
+              <div class="experience-item">
+                <div class="experience-year">2022-2025</div>
+                <div class="experience-content">
+                  <h4>Développeur Front-end Senior</h4>
+                  <p>Studio Digital Créatif - Paris</p>
+                </div>
+              </div>
+              <div class="experience-item">
+                <div class="experience-year">2019-2021</div>
+                <div class="experience-content">
+                  <h4>Développeur Web</h4>
+                  <p>Agence Web  </p>
+                </div>
+              </div>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="services">
+      <div class="container">
+        <div class="section-title">
+          <h2>Mes Services</h2>
+        </div>
+        <div class="services-grid">
+          <div class="service-card reveal-up">
+            <div class="service-icon">
+              <i class="fas fa-code"></i>
+            </div>
+            <h3>Développement Web</h3>
+            <p>
+              Création de sites web modernes, réactifs et optimisés pour les
+              moteurs de recherche avec les technologies les plus récentes.
+            </p>
+          </div>
+
+          <div class="service-card reveal-up" data-delay="400">
+            <div class="service-icon">
+              <i class="fas fa-mobile-alt"></i>
+            </div>
+            <h3>Développement mobile</h3>
+            <p>
+              Création d'applications mobiles performantes et intuitives pour
+              iOS et Android, en utilisant des technologies natives ou
+              cross-platform (Flutter). De la conception à la publication sur
+              les stores, je vous accompagne dans la réalisation de votre projet
+              mobile.
+            </p>
+          </div>
+          <!-- <div class="service-card reveal-up" data-delay="600">
+            <div class="service-icon">
+              <i class="fas fa-rocket"></i>
+            </div>
+            <h3>Optimisation de Performance</h3>
+            <p>
+              Amélioration des temps de chargement et de la performance globale
+              de votre site pour une meilleure expérience utilisateur.
+            </p>
+          </div> -->
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="projects">
+      <div class="container">
+        <div class="section-title">
+          <h2>Projets Récents</h2>
+        </div>
+        <div class="projects-filter">
+          <button class="filter-btn active" data-filter="all">Tous</button>
+          <button class="filter-btn" data-filter="web">Web</button>
+          <button class="filter-btn" data-filter="app">
+            Applications mobiles
+          </button>
+        </div>
+        <div class="projects-grid">
+          <div class="project-card reveal-up" data-category="web">
+            <div class="project-img">
+              <img src="./asset/bankist.png" alt="" />
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a
+                    href="https://bankist011.netlify.app"
+                    class="project-link"
+                    target="_blank"
+                    ><i class="fas fa-eye"></i
+                  ></a>
+                  <a
+                    href="https://github.com/RoroPama/Bankist"
+                    class="project-link"
+                    target="_blank"
+                    ><i class="fab fa-github"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-tags">
+                <span class="project-tag">HTML</span>
+                <span class="project-tag">CSS</span>
+                <span class="project-tag">JavaScript</span>
+                <span class="project-tag">Firebase</span>
+              </div>
+              <h3>Banskit</h3>
+              <p>
+                Une plateforme pour une banque afin que leur client creer et
+                gere leur compte à distances
+              </p>
+            </div>
+          </div>
+          <div
+            class="project-card reveal-up"
+            data-delay="200"
+            data-category="app"
+          >
+            <div class="project-img">
+              <img
+                src="https://images.pexels.com/photos/30912294/pexels-photo-30912294/free-photo-of-cygne-blanc-serein-glissant-sur-un-etang-brumeux-a-sintra.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                alt="Projet 2 - Application Mobile"
+              />
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a
+                    href="https://eppass.netlify.app"
+                    class="project-link"
+                    target="_blank"
+                    ><i class="fas fa-eye"></i
+                  ></a>
+                  <!-- <a href="#" class="project-link"
+                    ><i class="fas fa-search"></i
+                  ></a> -->
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-tags">
+                <span class="project-tag">React</span>
+                <span class="project-tag">Flutter</span>
+                <span class="project-tag">Firebase</span>
+                <span class="project-tag">NodeJs</span>
+                <span class="project-tag">ExpressJs</span>
+              </div>
+              <h3>E-pass</h3>
+              <p>
+                E-pass est une application responsive ayant une version web et
+                mobile, conçue pour faciliter l'achat et la gestion de billets
+                électroniques (e-pass) pour des événements. L'application permet
+                aux utilisateurs de s'authentifier de manière sécurisée, de
+                consulter des événements, d'acheter des billets et d'accéder à
+                des informations en temps réel. Grâce à son intégration avec
+                Firebase, les données sont synchronisées instantanément, offrant
+                ainsi une expérience fluide et dynamique. Les organisateurs
+                d'événements peuvent également gérer leurs événements et
+                consulter des statistiques en temps réel, le tout à travers une
+                interface moderne et facile à utiliser.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonials" class="testimonials">
+      <div class="container">
+        <div class="section-title">
+          <h2>Ce que disent mes clients & collaborateurs</h2>
+        </div>
+        <div class="testimonials-container">
+          <div class="testimonial-item active">
+            <div class="testimonial-icon">
+              <i class="fas fa-quote-right"></i>
+            </div>
+            <p class="testimonial-text">
+              "Travailler avec Rolic, c'est quelque chose ! tu fais juste une
+              petite siete, dès que tu réveilles pour bosser sur le projet
+              backend, tu fais juste un petit check et bam, une nouvelle route
+              est déjà créée.😆😆 c'est un terrible"
+            </p>
+            <div class="testimonial-author">
+              <!-- <div class="testimonial-avatar">
+                <img
+                  src="https://via.placeholder.com/100x100"
+                  alt="Marie Dupont - Directrice Marketing"
+               
+              </div> /> -->
+              <div class="testimonial-info">
+                <h4>APIPI Pasteur</h4>
+                <p>Partenaire sur un projet</p>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-controls">
+            <button class="testimonial-control prev">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="testimonial-control next">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
+          <div class="testimonial-dots">
+            <div class="testimonial-dot active" data-index="0"></div>
+            <!-- <div class="testimonial-dot" data-index="1"></div>
+            <div class="testimonial-dot" data-index="2"></div> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="section-title">
+          <h2>Contactez-moi - Rolie DANGUI PAMA</h2>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-info reveal-left">
+            <h2>Parlons de votre projet</h2>
+            <p>
+              Intéressé par mes services ou vous avez des questions ? N'hésitez
+              pas à me contacter.
+            </p>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div>
+                <h3>Localisation</h3>
+                <p>Brazzaville, Congo</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div>
+                <h3>Email</h3>
+                <p>pamarolic017@gmail.com</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-phone"></i>
+              </div>
+              <div>
+                <h3>Téléphone</h3>
+                <p>+242 06 702 98 17</p>
+              </div>
+            </div>
+          </div>
+          <!-- <form class="contact-form reveal-right">
+            <div class="form-group">
+              <label for="name" class="form-label">Nom</label>
+              <input
+                type="text"
+                id="name"
+                class="form-input"
+                required
+                value="Votre nom"
+              />
+            </div>
+            <div class="form-group">
+              <label for="email" class="form-label">Email</label>
+              <input
+                type="email"
+                id="email"
+                class="form-input"
+                required
+                value="votre.email@exemple.com"
+              />
+            </div>
+            <div class="form-group">
+              <label for="subject" class="form-label">Sujet</label>
+              <input
+                type="text"
+                id="subject"
+                class="form-input"
+                required
+                value="Sujet de votre message"
+              />
+            </div>
+            <div class="form-group">
+              <label for="message" class="form-label">Message</label>
+              <textarea id="message" class="form-textarea" required>
+Votre message ici</textarea
+              >
+            </div>
+            <button type="submit" class="form-submit">
+              Envoyer le message
+            </button>
+          </form> -->
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-about">
+            <h3>Portfolio - Rolie DANGUI PAMA</h3>
+            <p>
+              Un développeur web & mobile passionné par la création interfaces
+              attrayantes et d'expériences numériques mémorables et
+              performantes.
+            </p>
+          </div>
+          <div class="footer-links">
+            <h3>Liens rapides</h3>
+            <ul>
+              <li><a href="#hero">Accueil</a></li>
+              <li><a href="#about">À propos</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#projects">Projets</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
