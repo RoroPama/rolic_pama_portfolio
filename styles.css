@@ -582,11 +582,38 @@ nav {
   margin-bottom: 2rem;
 }
 
+/* CSS pour les compétences catégorisées */
+.skills-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.skills-category h3 {
+  color: var(--primary-light);
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  position: relative;
+  padding-left: 1rem;
+}
+
+.skills-category h3::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 5px;
+  height: 1.2rem;
+  background: var(--primary);
+  border-radius: 2px;
+}
+
 .skills {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
-  margin: 2rem 0;
 }
 
 .skill {
@@ -626,6 +653,21 @@ nav {
 .experience-content p {
   margin-bottom: 0;
   opacity: 0.8;
+}
+
+/* Media query pour la version mobile */
+@media (max-width: 768px) {
+  .skills-container {
+    gap: 1.5rem;
+  }
+
+  .experience-item {
+    flex-direction: column;
+  }
+
+  .experience-year {
+    margin-bottom: 0.5rem;
+  }
 }
 
 /* Services Section */
