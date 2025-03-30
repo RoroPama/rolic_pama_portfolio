@@ -127,3 +127,44 @@ document.addEventListener("DOMContentLoaded", function () {
     cursor.style.top = e.pageY + "px";
   });
 });
+
+////Email
+
+document.addEventListener("DOMContentLoaded", function () {
+  emailjs.init("VOTRE_CLE_PUBLIQUE"); // Remplacez par votre clé publique EmailJS
+
+  const form = document.getElementById("contact-form");
+  const formStatus = document.getElementById("form-status");
+
+  form.addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    const submitButton = form.querySelector(".form-submit");
+    const originalText = submitButton.textContent;
+    submitButton.textContent = "Envoi en cours...";
+    submitButton.disabled = true;
+
+    emailjs.sendForm("SERVICE_ID", "TEMPLATE_ID", this).then(
+      function () {
+        formStatus.textContent = "Votre message a été envoyé avec succès!";
+        formStatus.style.color = "green";
+
+        form.reset();
+
+        submitButton.textContent = originalText;
+        submitButton.disabled = false;
+
+        setTimeout(() => {
+          formStatus.textContent = "";
+        }, 5000);
+      },
+      function (error) {
+        formStatus.textContent = "Erreur lors de l'envoi: " + error.text;
+        formStatus.style.color = "red";
+
+        submitButton.textContent = originalText;
+        submitButton.disabled = false;
+      }
+    );
+  });
+});
