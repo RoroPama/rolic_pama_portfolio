@@ -898,6 +898,35 @@ nav {
   font-size: 0.95rem;
 }
 
+/* Style du bouton CV pour rester cohérent avec le thème du site */
+.about-cta {
+  margin-top: 2rem;
+}
+
+.btn-outline {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: transparent;
+  color: var(--light);
+  border: 2px solid var(--primary);
+  border-radius: var(--border-radius);
+  padding: 10px 25px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.btn-outline:hover {
+  background: var(--primary);
+  transform: translateY(-3px);
+  box-shadow: var(--shadow);
+}
+
+.btn-outline i {
+  font-size: 1rem;
+}
+
 /* Testimonials Section */
 .testimonials {
   background-color: #1a1a20;
